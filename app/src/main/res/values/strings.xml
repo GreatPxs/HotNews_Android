@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">小编盒子</string>
+    <!-- 登录页 -->
+    <string name="login">登录</string>
+    <string name="btn_login">登录</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="tv_forget_pwd">忘记密码</string>
+    <string name="tv_register">注册账号</string>
+    <string name="reset">忘记密码</string>
+    <!-- 注册页 -->
+    <string name="register">注册</string>
+    <string name="hint_nickname">请输入昵称</string>
+    <string name="hint_phonenumber">请输入电话号码</string>
+    <string name="btn_registe">注册</string>
+
+    <!--邮箱部分 -->
+    <string name="hint_email">请输入邮箱</string>
+
+
+    <!-- 首页设计部分 -->
+    <string name="layout_top1">小编盒子</string>
+    <string name="function1">修改密码</string>
+    <string name="function2">特别工具</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- finally -->
+    <string name="words">
+        大家好，我是小编盒子的开发者，开发这款小应用的目的是方便大家在生活中使用，比如一些
+        查询天气，物流信息等，都可以使用这个应用，目前此应用处于开发阶段，功能善为完善，UI界面也有待
+        提升，优化也还得提升，所以有bug的话大家可以在”反馈信息“处提交！
+    </string>
+
+    <!-- author -->
+    <string name="authors">Acloudtwei</string>
+    <string name="wxs">WX：acloudtwei"</string>
+    <string name="webs">https://film.itwei.top/my</string>
+
+    <!-- feedbacks -->
+    <string name="feedback">请输入反馈信息，不超过1000字！</string>
+
+    <!--    android:layout_alignParentLeft="true"  &#45;&#45;将控件的左边缘和父控件的左边缘对齐-->
+    <!--    android:layout_alignParentTop="true"  &#45;&#45;将控件的上边缘和父控件的上边缘对齐-->
+    <!--    android:layout_alignParentRight="true"  &#45;&#45;将控件的右边缘和父控件的右边缘对齐-->
+    <!--    android:layout_alignParentBottom="true" &#45;&#45;将控件的底边缘和父控件的底边缘对齐-->
+
+    <!--    android:layout_centerInParent="true"  &#45;&#45;将控件置于父控件的中心位置-->
+    <!--    android:layout_centerHorizontal="true"  &#45;&#45;将控件置于水平方向的中心位置-->
+    <!--    android:layout_centerVertical="true"  &#45;&#45;将控件置于垂直方向的中心位置-->
+
+
+    <!--    android : layout_marginxxx的用法是指当前组件距离其父组件在xxx方向上的边距-->
+    <!--    -->
+    <!--padding是相对于当前组件而言的，就是指组件内的文本距离当前组件xxx-->
+
+
+    <!--    padding值设置的是控件里的内容距控件边上的距离。-->
+    <!--    当paddingBottom、paddingTop、paddingLeft、paddingRight设置的值相同时，可以使用padding属性代替。-->
+
+    <!--    而INVISIBLE和GONE的主要区别是：当控件visibility属性为INVISIBLE时，界面保留了view控件所占有的空间；而控件属性为GONE时，-->
+    <!--    界面则不保留view控件所占有的空间。可以用来设置一个控件是否要隐藏不可见还是说可见-->
+    <!--    在Android开发中，大部分控件都有visibility这个属性，其属性有3个分别为“visible ”、“invisible”、“gone”。-->
+    <!--    主要用来设置控制控件的显示和隐藏。有些人可能会疑惑Invisible和gone是有什么区别的？？？那么，我们带着这个疑问看下面：-->
+
+    <!--最终功能确立-->
+    <!--    https://www.juhe.cn/docs/api/id/73
+https://tenapi.cn/wether/?city=北京  天气预报-->
+    <!-- https://xiaojieapi.com/2021/03/20/58B39.html 60s读世界-->
+    <!--  https://docs.tenapi.cn/qrcode.html#%E8%B0%83%E7%94%A8%E6%95%88%E6%9E%9C
+  https://api.tx7.co/api/QRcode/QRcode.php
+  https://www.juhe.cn/docs/api/id/296 二维码生成-->
+    <!--  https://api.tx7.co/api/epidemic/epidemic.php 新馆肺炎查询  -->
+    <!--    https://xiaojieapi.com/api/v1/get/joke 笑话一下啊-->
+
+
+    <!--    MAX-->
+    <!--  https://docs.tenapi.cn/video.html#%E8%AF%B7%E6%B1%82url
+  https://tenapi.cn/douyin/?url=https://v.douyin.com/m2mun2
+  抖音/各大视频去水印-->
+    <!--    热搜榜（多个）https://api.tx7.co/api/JinRiHotsearch/JinRiHotsearch.php-->
+
+
+    <!-- other-->
+    <!--    webview解决内置的浏览 https://www.jianshu.com/p/e8eeec4e8d71-->
+    <!--    https://www.runoob.com/w3cnote/android-tutorial-webview.html-->
+    <!--    取色器 https://blog.csdn.net/SXW1900/article/details/92570568-->
+
+
+    <!--替代品-->
+
+    <!--    https://api.uomg.com/doc-qrcode.html 二维码-->
+    <!--    https://api.uomg.com/doc-login.qq.html QQ登陆 post-->
+    <!--    https://api.uomg.com/api/visitor.info?skey=774740085 获取ip-->
+    <!-- https://www.douyacun.com/api/openapi/geo/location?ip=178.252.91.188&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiJlZWQ4ZmQ1ODBmYTRmNjkyIn0.d7qF_mjdXMC0R5M6f04Lnh6x61kaU4lqHT0Axt9xUOY-->
+    <!--    https://api.uomg.com/api/rand.qinghua?format=json 随机一言-->
+    <!--    https://api.wrdan.com/douyin url=https://www.douyin.com/video/6973991983329168644?previous_page=main_page 抖音post-->
+    <!--    -->
+
+
+    <!--    头条新闻  https://www.juhe.cn/docs/api/id/235 -->
+    <!--    http://ai.kenaisq.top/API/tiangou.php 天狗日记-->
+    <!--    http://ai.kenaisq.top/API/xh.php 笑话-->
+    <!--    https://tenapi.cn/douyin/?url=https://v.douyin.com/m2mun2 抖音解析-->
+    <!--    http://service.picasso.adesk.com/v1/lightwp/category 图片大全-->
+    <!--    https://v1.jinrishici.com/all.txt 随机一言-->
+    <!--    https://q1.qlogo.cn/headimg_dl?dst_uin=1559295172&spec=100 获取qq头像-->
+    <!--    http://api.suolink.cn/api.htm?url=https://www.chinairn.com/-->
+    <!--    生成短链接-->
+    <!--    https://xiaojieapi.com/2021/05/16/491DA.html 笑话接口-->
+    <!--    https://xiaojieapi.com/2021/04/17/B6B35.html 保安日记-->
+    <!--    https://xiaojieapi.com/2021/05/16/F0BB1.html 百度翻译-->
+    <!--    https://xiaojieapi.com/2021/04/17/2FCC9.html 看黄图片-->
+    <!--    https://xiaojieapi.com/2021/04/17/EE514.html ocr文字识别 垃圾-->
+    <!--    https://xiaojieapi.com/2021/04/16/E9F40.html 快递查询-->
+    <!--    https://xiaojieapi.com/2021/04/16/703D5.html 随即一言-->
+    <!--    https://xiaojieapi.com/2021/03/20/58B39.html 60s看世界-->
+    <!--    https://xiaojieapi.com/2021/03/20/49ECC.html 每日新闻-->
+
+    <!--    background: linear-gradient(to bottom, #00F5A0, #00D9F5);-->
+    <!--    background: linear-gradient(to bottom, #FBD3E9, #BB377D);-->
+    <!--    background: linear-gradient(to bottom, #BE93C5, #7BC6CC);-->
+    <!--    background: linear-gradient(to bottom, #ddd6f3, #faaca8);-->
+
+    <!--    // 下面有bug-->
+    <!--    http://api.63code.com/history/api.php?format=json 历史上的今天-->
+    <!--    https://api.63code.com/qrcode/ 二维码生成-->
+    <!--    https://api.63code.com/garbage/ 垃圾分类-->
+    <!--    https://api.63code.com/yan/ 随机一言-->
+    <!--    https://api.63code.com/translate_v1/ 高级翻译-->
+
+</resources>
