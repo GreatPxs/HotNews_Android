@@ -17,13 +17,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import com.example.one.function.function6;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class zhihu_webview extends AppCompatActivity {
 
@@ -94,33 +92,6 @@ public class zhihu_webview extends AppCompatActivity {
         });
 
 
-
-//        mWebView.setWebViewClient(new WebViewClient() {
-//            @Override
-//            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-//                WebView.HitTestResult hit = view.getHitTestResult();
-//                //hit.getExtra()为null或者hit.getType() == 0都表示即将加载的URL会发生重定向，需要做拦截处理
-//                if (TextUtils.isEmpty(hit.getExtra()) || hit.getType() == 0) {
-//
-//                }
-//                //加载的url是http/https协议地址
-//                if (request.getUrl().getScheme().startsWith("http://") || request.getUrl().getScheme().startsWith("https://")){
-//                    view.loadUrl(request.getUrl().toString());
-//                    return false;
-//                }else{
-//                    //加载的url是自定义协议地址
-//                    try {
-//                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(request.getUrl().toString()));
-//                        Main1Activity.this.startActivity(intent);
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//                    return true;
-//                }
-//            }
-//
-//        });
-
         webView.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
@@ -159,13 +130,8 @@ public class zhihu_webview extends AppCompatActivity {
 
     public void zhihu_listview(View view)
     {
-        Intent intent = new Intent(this, function6.class);
-        //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        Intent intent = new Intent(this, hotNews.class);
         startActivity(intent);
         finish();
-//        Intent intent = new Intent(this, function6.class);
-//        intent.putExtra("id",1);
-//        startActivity(intent);
-//        overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
     }
 }

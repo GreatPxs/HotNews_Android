@@ -29,6 +29,7 @@ public class weibo extends Fragment {
     protected List<String> weibo_titles = new ArrayList<>();
     protected List<String> weibo_hots = new ArrayList<>();
     private List<String> weibo_urls = new ArrayList<>();
+
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_weibo,container,false);
@@ -36,6 +37,7 @@ public class weibo extends Fragment {
         String titles_listJson = sp.getString("weibo_json_title","");
         String hots_listJson = sp.getString("weibo_json_hot","");
         String urls_listJson = sp.getString("weibo_json_url","");
+
         if(!titles_listJson.equals(""))
         {
             Gson gson = new Gson();
@@ -112,7 +114,10 @@ public class weibo extends Fragment {
                 weibos = (WeiBo) convertView.getTag();
             }
             //绑定数据
-            weibos.weibo_number.setText(String.valueOf(position+1)+".");
+            if (position >= 9) {
+                weibos.weibo_number.setText(String.valueOf(position+1)+".");
+            }
+            else weibos.weibo_number.setText(String.valueOf(position+1)+"." + "  ");
             weibos.weibo_title.setText(weibo_titles.get(position));
             weibos.weibo_hot.setText(weibo_hots.get(position));
             weibos.weibo_button.setOnClickListener(new View.OnClickListener() {
