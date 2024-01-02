@@ -13,49 +13,23 @@
         android:theme="@style/Theme.One"
         android:usesCleartextTraffic="true"
         tools:replace="android:theme">
-        <activity android:name=".specialfunction.hz_web"></activity>
-        <activity android:name=".specialfunction.hz" />
-        <activity android:name=".specialfunction.music163s" />
-        <activity android:name=".specialfunction.music163" />
-        <activity android:name=".specialfunction.wxsport" />
-        <activity android:name=".UserMessage.qq" />
-        <activity android:name=".UserMessage.email" />
-        <activity android:name=".UserMessage.nickname" />
-        <activity android:name=".My.accounts" />
-        <activity android:name=".activity.resetPassword" />
-        <activity android:name=".My.PassWord" />
-        <activity android:name=".My.feedbacks" />
-        <activity android:name=".My.abouts" />
-        <activity android:name=".activity.myactivity" />
         <activity android:name=".zhihu_webview" />
         <activity android:name=".weibo_webview" />
-        <activity android:name=".function.function6" />
-        <activity android:name=".activity.function5_preview" />
-        <activity android:name=".activity.function4_preview" />
-        <activity android:name=".function.function5" />
-        <activity android:name=".function.function4" />
-        <activity android:name=".function.function3" />
-        <activity android:name=".function.function2" />
-        <activity android:name=".function.function1" />
-        <activity android:name=".activity.functionactivity" />
-        <activity android:name=".activity.homeactivity" />
-        <activity android:name=".activity.register_activity" />
-        <activity android:name=".activity.login_activity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".toutiao_webview"/>
+        <activity android:name=".baidu_webview"/>
+        <activity android:name=".bilibili_webview"/>
+
+        <activity android:name=".hotNews" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
-                <!-- <action android:name="android.intent.action.VIEW"/> -->
-                <!-- <category android:name="android.intent.category.DEFAULT"/> -->
-                <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
-                <!-- <data android:scheme="acloudtwei"/> -->
-
             </intent-filter>
         </activity>
+        <activity android:name="com.google.ai.sample.MainActivity" android:exported="true"
+            android:label="chat" />
         <activity
-            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:name="cn.bmob.v3.update.UpdateDialogActivity" android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data

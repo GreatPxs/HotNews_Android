@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".hotNews">
+
+    <LinearLayout
+        android:id="@+id/f6_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_color"
+        android:orientation="horizontal">
+
+        <!--        <Button-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:onClick="main_function"-->
+        <!--            android:background="@drawable/all_arrow"/>-->
+
+
+
+        <TextView
+            android:id="@+id/function1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:id="@+id/buttonchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI对话"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="200dp" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabTextColor="#228be6"
+        app:tabSelectedTextColor="@color/cardview_shadow_end_color"
+        app:tabRippleColor="@android:color/transparent"
+        android:layout_below="@+id/f6_top" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"/>
+
+</RelativeLayout>

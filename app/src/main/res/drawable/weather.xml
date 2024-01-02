@@ -19,7 +19,7 @@
             android:shape="rectangle"
             android:useLevel="false">
             <!-- 实心 -->
-            <solid android:color="#faa2c1" />
+            <solid android:color="#87cefb" />
             <corners android:radius="10dp" />
             <padding
                 android:bottom="10dp"

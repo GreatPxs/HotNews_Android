@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="pink">#eebefa</color>
+    <color name="transparent">#00000000</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#FF03DAC5</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="divider">#e8e7e7</color>
-    <color name="skin_text_white">#ffffff</color>
-    <color name="skin_topbar_bg_color">#344261</color>
-    <color name="bt_login_begin">#66d9e8</color>
-    <color name="bt_login_end">#15aabf</color>
-    <color name="bt_register_begin">#fcc2d7</color>
-    <color name="bt_register_end">#eebefa</color>
-    <color name="button_begin">#faaca8</color>
-    <color name="button_end">#ddd6f3</color>
-    <color name="top_color">#faa2c1</color>
-    <color name="transparent">#00000000</color>
-
+    <color name="top_color">#87CEFA</color>
+    <color name="background">#ECEFF7</color>
 </resources>

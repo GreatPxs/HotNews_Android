@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -16,7 +15,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import com.example.one.function.function6;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -109,13 +107,8 @@ public class weibo_webview extends AppCompatActivity {
 
     public void weibo_listview(View view)
     {
-        Intent intent = new Intent(this, function6.class);
-        //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        Intent intent = new Intent(this, hotNews.class);
         startActivity(intent);
         finish();
-//        Intent intent = new Intent(this, function6.class);
-//        intent.putExtra("id",1);
-//        startActivity(intent);
-//        overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
     }
 }

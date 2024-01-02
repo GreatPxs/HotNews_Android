@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#5D8B99"/> <!-- 压下时的颜色 -->
+            <corners android:radius="10dp"/> <!-- 圆角 -->
+            <stroke android:width="2dp" android:color="#5D8B99"/> <!-- 边框 -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FF8C00"/> <!-- 正常时的颜色 -->
+            <corners android:radius="10dp"/> <!-- 圆角 -->
+            <stroke android:width="2dp" android:color="#FFFFFF"/> <!-- 边框 -->
+        </shape>
+    </item>
+</selector>

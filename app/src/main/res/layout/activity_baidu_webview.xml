@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".baidu_webview">
+
+    <LinearLayout
+        android:id="@+id/baidu_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="baidu_listview"
+            android:background="@drawable/all_arrow"/>
+
+        <TextView
+            android:id="@+id/function1_text"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/baidu_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/baidu_below"/>
+
+</RelativeLayout>

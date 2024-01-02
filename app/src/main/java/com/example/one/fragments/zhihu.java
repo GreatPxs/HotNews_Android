@@ -27,14 +27,14 @@ import java.util.Objects;
 public class zhihu extends Fragment {
     private View view;
     protected List<String> zhihu_titles = new ArrayList<>();
-    protected List<String> zhihu_querys = new ArrayList<>();
+    protected List<String> zhihu_hots = new ArrayList<>();
     private List<String> zhihu_urls = new ArrayList<>();
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_zhihu,container,false);
         SharedPreferences sp = Objects.requireNonNull(getActivity()).getSharedPreferences("zhihu", Activity.MODE_PRIVATE);
         String titles_listJson = sp.getString("zhihu_json_title","");
-        String querys_listJson = sp.getString("zhihu_json_query","");
+        String querys_listJson = sp.getString("zhihu_json_hot","");
         String urls_listJson = sp.getString("zhihu_json_url","");
         if(!titles_listJson.equals(""))
         {
@@ -44,7 +44,7 @@ public class zhihu extends Fragment {
         if(!querys_listJson.equals(""))
         {
             Gson gson = new Gson();
-            zhihu_querys = gson.fromJson(querys_listJson,new TypeToken<List<String>>(){}.getType());
+            zhihu_hots = gson.fromJson(querys_listJson,new TypeToken<List<String>>(){}.getType());
         }
         if(!urls_listJson.equals(""))
         {
@@ -71,7 +71,7 @@ public class zhihu extends Fragment {
         public final class ZhiHu {
             public TextView zhihu_number;
             public TextView zhihu_title;
-            public TextView zhihu_query;
+            public TextView zhihu_hot;
             public LinearLayout zhihu_button;
         }
 
@@ -105,16 +105,19 @@ public class zhihu extends Fragment {
                 convertView = layoutInflater.inflate(R.layout.zhihu_item, null);
                 zhihus.zhihu_number = (TextView) convertView.findViewById(R.id.zhihu_number);
                 zhihus.zhihu_title = (TextView) convertView.findViewById(R.id.zhihu_title);
-                zhihus.zhihu_query = (TextView) convertView.findViewById(R.id.zhihu_query);
+                zhihus.zhihu_hot = (TextView) convertView.findViewById(R.id.zhihu_hot);
                 zhihus.zhihu_button = (LinearLayout) convertView.findViewById(R.id.zhihu_button);
                 convertView.setTag(zhihus);
             } else {
                 zhihus = (ZhiHu) convertView.getTag();
             }
             //绑定数据
-            zhihus.zhihu_number.setText(String.valueOf(position+1)+".");
+            if (position >= 9) {
+                zhihus.zhihu_number.setText(String.valueOf(position+1)+".");
+            }
+            else zhihus.zhihu_number.setText(String.valueOf(position+1)+"." + "  ");
             zhihus.zhihu_title.setText(zhihu_titles.get(position));
-            zhihus.zhihu_query.setText(zhihu_querys.get(position));
+            zhihus.zhihu_hot.setText(zhihu_hots.get(position));
             zhihus.zhihu_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
